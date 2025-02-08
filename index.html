@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Valentine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Will you be my Valentine?</h1>
+    <canvas id="canvas" width="400" height="200"></canvas>
+    <div class="buttons">
+      <button id="yesButton" onclick="moveAlpacas()">Yes</button>
+      <button id="noButton" onclick="showBrokenHeart()">No</button>
+    </div>
+    <div id="heart" class="hidden">❤️</div>
+    <div id="broken-heart" class="hidden">💔</div>
+  </div>
+  <audio id="sound" src="heart-sound.wav"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
