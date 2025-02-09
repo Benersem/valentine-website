@@ -63,7 +63,7 @@ drawScene();
 
 function moveAlpacas() {
     let interval = setInterval(() => {
-        if (rightX - leftX <= stopDistance) { // Stop when distance equals alpaca width
+        if (rightX - leftX <= alpacaWidth * 1.8) { // Stop when distance equals alpaca width
             clearInterval(interval);
             document.getElementById("heart").style.display = "block";
             document.getElementById("sound").play();
